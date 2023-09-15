@@ -2,7 +2,7 @@
 // A function for simulating an asynchronous request to the server
 function fetchData(callback) {
   setTimeout(() => {
-    const responseData = { user: 'John', age: 30 };
+    const responseData = { user: 'Illia', age: 30 };
     callback(responseData);
   }, 2000);
 }
@@ -11,14 +11,14 @@ function fetchData(callback) {
 // Function for processing received data
 function processUserData(data, callback) {
   setTimeout(() => {
-    data.location = 'New York';
+    data.location = 'Kyiv';
     callback(data);
   }, 2000);
 }
 
 // Перший асинхронний запит // first async req
-fetchData((userData) => {
-  console.log('User data received:', userData);
+fetchData((usrData) => {
+  console.log('usrData received:', usrData);
 
   // Другий асинхронний запит на основі даних з першого запиту
   // Second asynchronous request based on the data from the first request
