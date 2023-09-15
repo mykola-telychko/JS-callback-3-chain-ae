@@ -22,8 +22,8 @@ fetchData((usrData) => {
 
   // Другий асинхронний запит на основі даних з першого запиту
   // Second asynchronous request based on the data from the first request
-  processUserData(userData, (userDataWithLocation) => {
-    console.log('User data with location:', userDataWithLocation);
+  processUserData(usrData, (usrDataLocation) => {
+    console.log('User data + location:', usrDataLocation);
 
     // Тут можна продовжити ланцюг обробки даних
     // Here you can continue the data processing chain
